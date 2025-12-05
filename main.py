@@ -288,7 +288,7 @@ class CoreManagerFrame(tk.Frame, GitItemBase):
 class ComfyUpdaterApp:
     def __init__(self, root):
         self.root = root
-        self.root.title("ComfyUI 全能管理器 (插件 + 本体)")
+        self.root.title("ComfyUI 版本管理器 👻CK👻")
         self.root.geometry("1100x750")
 
         self.config = configparser.ConfigParser()
@@ -442,4 +442,5 @@ class ComfyUpdaterApp:
 if __name__ == "__main__":
     root = tk.Tk()
     app = ComfyUpdaterApp(root)
+
     root.mainloop()
