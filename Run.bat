@@ -1,6 +1,9 @@
 @echo off
 setlocal enabledelayedexpansion
 
+:: 切换编码防止乱码
+chcp 65001 >nul
+
 :: 设置配置文件名
 set CONFIG_FILE=config.ini
 set SCRIPT_FILE=main.py
@@ -46,4 +49,5 @@ echo running...
 if %errorlevel% neq 0 (
     echo Error
     pause
+
 )
